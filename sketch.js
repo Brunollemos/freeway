@@ -2,6 +2,9 @@ let imagemDaEstrada;
 let imagemDoAtor;
 let imagemCarro;
 
+//variáveis do carro
+let xCarro = 420;
+
 function preload() {
   imagemDaEstrada = loadImage("img/estrada.png");
   imagemDoAtor = loadImage("img/ator-1.png");
@@ -14,6 +17,14 @@ function setup() {
 
 function draw() {
   background(imagemDaEstrada);
+  mostraAtor();
+  mostraCarro();
+}
+
+function mostraAtor() {
   image(imagemDoAtor, 100, 370, 30, 25);
-  image(imagemCarro, 420, 40, 50, 40);
+}
+
+function mostraCarro() {
+  image(imagemCarro, xCarro, 40, 50, 40);
 }
