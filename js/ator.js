@@ -1,8 +1,9 @@
 //variáveis do ator
 let yAtor = 370;
+let xAtor = 100;
 
 function mostraAtor() {
-  image(imagemDoAtor, 100, yAtor, 30, 25);
+  image(imagemDoAtor, xAtor, yAtor, 30, 25);
 }
 
 function movimentaAtor() {
