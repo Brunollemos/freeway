@@ -1,38 +1,28 @@
-//variáveis do carro1
-let xCarro1 = 500;
-let yCarro1 = 40;
-let velocidadeCarro1 = 2;
-
-//variáveis do carro2
-let xCarro2 = 500;
-let yCarro2 = 95;
-let velocidadeCarro2 = 2.5;
-
-//variáveis do carro3
-let xCarro3 = 500;
-let yCarro3 = 150;
-let velocidadeCarro3 = 3.2;
+//variáveis do carro
+let xCarros = [500, 500, 500];
+let yCarros = [40, 95, 150];
+let velocidadeCarros = [2, 2.5, 3.2];
 
 function mostraCarro() {
-  image(imagemCarro1, xCarro1, yCarro1, 50, 40);
-  image(imagemCarro2, xCarro2, yCarro2, 50, 40);
-  image(imagemCarro3, xCarro3, yCarro3, 50, 40);
+  image(imagemCarro1, xCarros[0], yCarros[0], 50, 40);
+  image(imagemCarro2, xCarros[1], yCarros[1], 50, 40);
+  image(imagemCarro3, xCarros[2], yCarros[2], 50, 40);
 }
 
 function movimentaCarro() {
-  xCarro1 -= velocidadeCarro1;
-  xCarro2 -= velocidadeCarro2;
-  xCarro3 -= velocidadeCarro3;
+  xCarros[0] -= velocidadeCarros[0];
+  xCarros[1] -= velocidadeCarros[1];
+  xCarros[2] -= velocidadeCarros[2];
 }
 
 function voltaPosicaoInicial() {
-  if (xCarro1 < -50) {
-    xCarro1 = 500;
+  if (xCarros[0] < -50) {
+    xCarros[0] = 500;
   }
-  if (xCarro2 < -50) {
-    xCarro2 = 500;
+  if (xCarros[1] < -50) {
+    xCarros[1] = 500;
   }
-  if (xCarro3 < -50) {
-    xCarro3 = 500;
+  if (xCarros[2] < -50) {
+    xCarros[2] = 500;
   }
 }
