@@ -3,7 +3,7 @@ function setup() {
 }
 
 function draw() {
-  background(imagemDaEstrada);
+  background(imagemEstrada);
   mostraAtor();
   mostraCarro();
   movimentaCarro();
