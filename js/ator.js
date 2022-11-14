@@ -9,13 +9,13 @@ function mostraAtor() {
 }
 
 function movimentaAtor() {
-  if (keyIsDown(87) && yAtor > 7) {
+  if (keyIsDown(87)) {
     yAtor -= 3;
-    console.log(yAtor);
   }
-  if (keyIsDown(83) && yAtor < 370) {
-    yAtor += 3;
-    console.log(yAtor);
+  if (keyIsDown(83)) {
+    if (podeSeMover()) {
+      yAtor += 3;
+    }
   }
 }
 
@@ -59,4 +59,8 @@ function marcaPonto() {
 
 function pontosMaiorQueZero() {
   return meusPontos > 0;
+}
+
+function podeSeMover() {
+  return yAtor < 370;
 }
