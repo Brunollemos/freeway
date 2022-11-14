@@ -32,12 +32,15 @@ function verificaColisao() {
     );
     if (colisao) {
       voltaAtorPosicaoInicial();
+      if (pontosMaiorQueZero()) {
+        meusPontos -= 1;
+      }
     }
   }
 }
 
 function voltaAtorPosicaoInicial() {
-  yAtor = 366;
+  yAtor = 370;
 }
 
 function incluiPlacar() {
@@ -52,4 +55,8 @@ function marcaPonto() {
     meusPontos += 1;
     voltaAtorPosicaoInicial();
   }
+}
+
+function pontosMaiorQueZero() {
+  return meusPontos > 0;
 }
