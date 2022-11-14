@@ -10,4 +10,6 @@ function draw() {
   movimentaAtor();
   voltaPosicaoInicial();
   verificaColisao();
+  incluiPlacar();
+  marcaPonto();
 }
