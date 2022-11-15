@@ -1,8 +1,13 @@
+//imagens e sons do jogo
 let imagemEstrada;
 let imagemAtor;
 let imagemCarro1;
 let imagemCarro2;
 let imagemCarro3;
+
+let somDaColisao;
+let somDoPonto;
+let somDaTrilha;
 
 function preload() {
   imagemEstrada = loadImage("img/estrada.png");
@@ -18,4 +23,7 @@ function preload() {
     imagemCarro2,
     imagemCarro3,
   ];
+  somDaTrilha = loadSound("sounds/trilha.mp3");
+  somDaColisao = loadSound("sounds/colidiu.mp3");
+  somDoPonto = loadSound("sounds/pontos.wav");
 }

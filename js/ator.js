@@ -34,6 +34,7 @@ function verificaColisao() {
       voltaAtorPosicaoInicial();
       if (pontosMaiorQueZero()) {
         meusPontos -= 1;
+        somDaColisao.play();
       }
     }
   }
@@ -54,6 +55,7 @@ function marcaPonto() {
   if (yAtor <= 8) {
     meusPontos += 1;
     voltaAtorPosicaoInicial();
+    somDoPonto.play();
   }
 }
 
